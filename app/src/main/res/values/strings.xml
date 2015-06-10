@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">assign1</string>
+
+    <string name="red">R</string>
+    <string name="green">G</string>
+    <string name="blue">B</string>
+    <string name="white">W</string>
+    <string name="action_settings">Settings</string>
+</resources>
