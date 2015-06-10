@@ -1,5 +1,6 @@
 package giorgi.kucia.assign1;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.text.Layout;
@@ -17,6 +18,9 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.a);
+
+
         Button red = (Button) findViewById(R.id.red);
         Button white = (Button) findViewById(R.id.white);
         Button green = (Button) findViewById(R.id.green);
@@ -28,6 +32,7 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
             ll.setBackgroundColor(getResources().getColor(R.color.red));
+                mp.start();
             }
         });
 
@@ -35,6 +40,7 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 ll.setBackgroundColor(getResources().getColor(R.color.white));
+                mp.start();
             }
         });
 
@@ -42,6 +48,7 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 ll.setBackgroundColor(getResources().getColor(R.color.green));
+                mp.start();
             }
         });
 
@@ -49,6 +56,7 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 ll.setBackgroundColor(getResources().getColor(R.color.blue));
+                mp.start();
             }
         });
 
