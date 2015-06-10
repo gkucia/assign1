@@ -20,7 +20,6 @@ public class MainActivity extends ActionBarActivity {
 
         final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.a);
 
-
         Button red = (Button) findViewById(R.id.red);
         Button white = (Button) findViewById(R.id.white);
         Button green = (Button) findViewById(R.id.green);
